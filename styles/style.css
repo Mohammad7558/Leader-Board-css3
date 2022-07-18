@@ -153,6 +153,9 @@ hr{
     .top-players, .blogs, .all-courses{
         grid-template-columns: repeat(1, 1fr);
     }
+    .top-blog-section{
+        padding: 20px;
+    }
     .player, .blog{
         flex-direction: column;
     }
@@ -170,6 +173,7 @@ hr{
 @media screen and (min-width: 689px) and (max-width: 992px) {
     .container{
         width: 100%;
+        padding: 30px;
     }
     .top-players, .all-courses{
         grid-template-columns: repeat(2, 1fr);
@@ -179,5 +183,8 @@ hr{
     }
     .single-course{
         margin-top: 20px;
+    }
+    .all-courses{
+        padding: 30px;
     }
 }
