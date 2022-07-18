@@ -163,3 +163,21 @@ hr{
         margin-top: 20px;
     }
 }
+/*----------------
+   tablet devices
+---------------- */
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .top-players, .all-courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        justify-content: center;
+    }
+    .single-course{
+        margin-top: 20px;
+    }
+}
