@@ -8,7 +8,8 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 /*-------- top-players style-------- */
 .section-title{
@@ -31,6 +32,8 @@ hr{
     background-color: #fff;
     width: 870px;
     padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 .player img{
     width: 56px;
@@ -46,6 +49,17 @@ hr{
 }
 
 /*------------- top blog styles ---------------*/
+.top-blog-section{
+    margin-top: 30px;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 40px;
+}
+
 .blog{
     display: flex;
 }
@@ -59,6 +73,7 @@ hr{
 .details .blog-title{
     font-size: 20px;
     color: #000;
+    margin-top: 0;
 }
 .details .author-name{
     color: #9F9F9F;
