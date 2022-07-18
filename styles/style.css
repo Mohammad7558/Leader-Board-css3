@@ -85,3 +85,81 @@ hr{
     font-size: 16px;
     text-decoration: none;
 }
+
+/*------------- courses style start -------------*/
+.all-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.single-course{
+    box-shadow: 0 0 10px lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.single-course .course-thumbnail img{
+    width: 100%;
+}
+.course-title{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.author-name{
+    color: #ED6B4F;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.course-rating-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.rate{
+    display: flex;
+    align-items: center;
+}
+.rating-point{
+    margin-left: 10px;
+}
+.fa-star{
+    font-size: 12px;
+    margin-right: 2px;
+}
+.fa-star.full{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: lightgray;
+}
+.course-duration{
+    background-color: lightgreen;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+/*---------------- media quari ----------------*/
+/*-----------------
+   mobile devices
+ -----------------*/
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .top-players, .blogs, .all-courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .all-courses{
+        margin: 30px;
+    }
+    .single-course{
+        margin-top: 20px;
+    }
+}
