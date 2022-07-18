@@ -44,3 +44,29 @@ hr{
     display: flex;
     align-items: center;
 }
+
+/*------------- top blog styles ---------------*/
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.details{
+    margin-left: 15px;
+}
+.details .blog-title{
+    font-size: 20px;
+    color: #000;
+}
+.details .author-name{
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+}
+.author-name a{
+    color: #562EFF;
+    font-size: 16px;
+    text-decoration: none;
+}
